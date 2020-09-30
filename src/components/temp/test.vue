@@ -672,15 +672,14 @@ export default {
 }
 
 #SideBarTitle {
-  padding: 5px;
-  padding-left: 15px;
+  padding: 5px 5px 5px 15px;
   width: 300px;
   border-radius: 0px 10px 10px 0px;
   background: rgb(77, 77, 155);
 }
 
 #SideBarContent div {
-  padding: 15px;
+  padding: 10px;
   margin: 10px;
   border-radius: 10px;
   background: rgb(77, 77, 155);
@@ -693,17 +692,14 @@ export default {
 }
 
 #MainPart {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 0px 50px 0px 50px;
   border-radius: 10px;
   background-color: rgb(29, 29, 92);
 }
 
 #MainPartTitle {
-  padding: 5px;
-  padding-left: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+  padding: 5px 5px 5px 15px;
+  margin: 15px 15px 15px 15px;
   border-radius: 10px;
   background: rgb(42, 42, 129);
 }
