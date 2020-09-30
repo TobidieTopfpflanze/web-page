@@ -303,24 +303,6 @@ export default {
   overflow-y: scroll;
 }
 
-/* scroll bar*/
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
-
 #SideBarContent div {
   padding: 10px;
   margin: 10px;

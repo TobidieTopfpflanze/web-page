@@ -42,6 +42,11 @@ export default {
   border-radius: 10px;
 }
 
+/* Handle on hover*/
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(110, 110, 110);
+}
+
 body {
   margin: 0px;
 }
