@@ -3,7 +3,6 @@
     <Navbar />
     <div>
       <router-view />
-      <hr />
     </div>
   </div>
 </template>
