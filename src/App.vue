@@ -21,7 +21,7 @@ export default {
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  color: #aaaaaa;
+  color: #cacaca;
 }
 
 /* scroll bar*/
