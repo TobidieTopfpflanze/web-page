@@ -273,23 +273,52 @@ export default {
 
 <style scoped>
 #PageTemplate {
-  display: grid;
+  display: flex;
   grid-template-columns: 300px auto;
   grid-template-rows: auto;
   margin-bottom: 20px;
 }
 
 #SideBar {
-  height: max-content;
+  position: sticky;
+  top: 5vh;
+  height: 90vh;
+  width: 320px;
   background-color: rgb(105, 105, 211);
   border-radius: 0px 10px 10px 0px;
 }
 
 #SideBarTitle {
   padding: 5px 5px 5px 15px;
-  width: 300px;
+  width: 315px;
   border-radius: 0px 10px 10px 0px;
   background: rgb(77, 77, 155);
+}
+
+#SideBarContent {
+  background-color: rgb(114, 114, 197);
+  height: auto;
+  border-radius: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* scroll bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
 }
 
 #SideBarContent div {
