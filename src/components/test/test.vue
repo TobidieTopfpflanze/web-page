@@ -282,9 +282,9 @@ export default {
     resize: () => {
       const bar = document.getElementById("SideBar");
       const content = document.getElementById("SideBarContent");
+      if (!(bar || content)) return;
       bar.style.height = window.innerHeight - 60 + "px";
       content.style.height = window.innerHeight - 150 + "px";
-      console.log(window.innerHeight);
       return;
     },
   },
