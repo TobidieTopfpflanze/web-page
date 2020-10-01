@@ -17,6 +17,15 @@
         <div>just some lorem ipsum text D:</div>
         <div>just some lorem ipsum text D:</div>
         <div>just some lorem ipsum text D:</div>
+        <div>just some lorem ipsum text D:</div>
+        <div>just some lorem ipsum text D:</div>
+        <div>just some lorem ipsum text D:</div>
+        <div>just some lorem ipsum text D:</div>
+        <div>just some lorem ipsum text D:</div>
+        <div>just some lorem ipsum text D:</div>
+        <div>just some lorem ipsum text D:</div>
+        <div>just some lorem ipsum text D:</div>
+        <div>just some lorem ipsum text D:</div>
       </div>
     </div>
     <div id="MainPart">
@@ -268,6 +277,24 @@
 <script>
 export default {
   name: "Test",
+
+  methods: {
+    resize: () => {
+      const bar = document.getElementById("SideBar");
+      const content = document.getElementById("SideBarContent");
+      bar.style.height = window.innerHeight - 60 + "px";
+      content.style.height = window.innerHeight - 150 + "px";
+      console.log(window.innerHeight);
+      return;
+    },
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      this.resize();
+      window.addEventListener("resize", () => this.resize());
+    });
+  },
 };
 </script>
 
@@ -281,11 +308,11 @@ export default {
 
 #SideBar {
   position: sticky;
-  top: 2vh;
+  top: 30px;
+  padding-bottom: 10px;
   display: grid;
   grid-template-columns: 320px;
   grid-template-rows: 80px 90vh;
-  height: 96vh;
   border-radius: 0px 10px 10px 0px;
   background-color: rgb(105, 105, 211);
 }
@@ -301,9 +328,6 @@ export default {
 #SideBarContent {
   overflow-x: hidden;
   overflow-y: scroll;
-  /*height: 720px;*/
-  height: 70vh;
-  margin-bottom: 30px;
   border-radius: 10px;
   background-color: rgb(114, 114, 197);
 }

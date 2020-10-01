@@ -35,19 +35,19 @@ export default {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f1f1f15d;
   border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: rgb(190, 190, 190);
   border-radius: 10px;
 }
 
 /* Handle on hover*/
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(110, 110, 110);
+  background: rgb(255, 255, 255);
 }
 
 body {
