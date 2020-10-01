@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Background />
     <Navbar />
     <div>
       <router-view />
@@ -9,11 +10,13 @@
 
 <script>
 import Navbar from "@/components/Navbar.vue";
+import Background from "@/components/Background.vue";
 
 export default {
   name: "App",
   components: {
     Navbar,
+    Background,
   },
 };
 </script>
