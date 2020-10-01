@@ -274,33 +274,38 @@ export default {
 <style scoped>
 #PageTemplate {
   display: flex;
+  margin-bottom: 20px;
   grid-template-columns: 300px auto;
   grid-template-rows: auto;
-  margin-bottom: 20px;
 }
 
 #SideBar {
   position: sticky;
-  top: 5vh;
-  height: 90vh;
-  width: 320px;
-  background-color: rgb(105, 105, 211);
+  top: 2vh;
+  display: grid;
+  grid-template-columns: 320px;
+  grid-template-rows: 80px 90vh;
+  height: 96vh;
   border-radius: 0px 10px 10px 0px;
+  background-color: rgb(105, 105, 211);
 }
 
 #SideBarTitle {
-  padding: 5px 5px 5px 15px;
   width: 315px;
+  height: 35px;
+  padding: 5px 5px 5px 15px;
   border-radius: 0px 10px 10px 0px;
   background: rgb(77, 77, 155);
 }
 
 #SideBarContent {
-  background-color: rgb(114, 114, 197);
-  height: auto;
-  border-radius: 10px;
   overflow-x: hidden;
   overflow-y: scroll;
+  /*height: 720px;*/
+  height: 70vh;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: rgb(114, 114, 197);
 }
 
 #SideBarContent div {
