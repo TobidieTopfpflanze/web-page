@@ -322,7 +322,7 @@ export default {
   height: 35px;
   padding: 5px 5px 5px 15px;
   border-radius: 0px 10px 10px 0px;
-  background: rgb(77, 77, 155);
+  background-color: rgb(77, 77, 155);
 }
 
 #SideBarContent {
@@ -336,32 +336,32 @@ export default {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  background: rgb(77, 77, 155);
+  background-color: rgb(77, 77, 155);
   transition: 250ms;
 }
 
 #SideBarContent div:hover {
-  background: rgba(0, 0, 0, 0.445);
+  background-color: rgba(0, 0, 0, 0.445);
   transition: 250ms;
 }
 
 #MainPart {
   margin: 0px 50px 0px 50px;
   border-radius: 10px;
-  background-color: rgb(29, 29, 92);
+  background-color: rgba(55, 56, 71);
 }
 
 #MainPartTitle {
   padding: 5px 5px 5px 15px;
   margin: 15px 15px 15px 15px;
   border-radius: 10px;
-  background: rgb(42, 42, 129);
+  background-color: rgb(44, 44, 56);
 }
 
 #MainPartContent {
   padding: 10px 20px 10px 20px;
   margin: 20px 20px 20px 20px;
   border-radius: 10px;
-  background: rgb(42, 42, 129);
+  background-color: rgb(44, 44, 56);
 }
 </style>
