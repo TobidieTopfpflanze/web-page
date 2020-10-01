@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Background />
-    <Navbar />
-    <div>
+    <div id="PageContent">
+      <Navbar />
       <router-view />
     </div>
     <Footer />
@@ -28,6 +28,10 @@ export default {
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #cacaca;
+}
+
+#PageContent {
+  min-height: 100vh;
 }
 
 /* scroll bar*/

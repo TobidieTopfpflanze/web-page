@@ -1,6 +1,6 @@
 <template>
   <div id="Footer">
-    <div class="Info">
+    <footer class="Info">
       <p>
         Developer:
         <a href="https://github.com/greyliances">Greyliances</a> &
@@ -15,7 +15,7 @@
         GitHub:
         <a href="https://github.com/GTM-BE/dash">Dash</a>
       </p>
-    </div>
+    </footer>
   </div>
 </template>
 
@@ -29,8 +29,8 @@ export default {
 .Info {
   padding: 30px;
   text-align: center;
-  border-top: rgb(55, 56, 71) solid 15px;
   border-radius: 10px;
+  border-top: rgb(55, 56, 71) solid 15px;
   background-color: rgb(44, 44, 56);
 }
 
