@@ -3,7 +3,7 @@
     <div id="Head">
       <router-link to="home">
         <img src="../assets/logo.png" />
-        <h1 id="title">Website</h1>
+        <h1 id="title">Dash</h1>
       </router-link>
     </div>
     <div id="Border" />
