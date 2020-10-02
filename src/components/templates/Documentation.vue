@@ -1,7 +1,7 @@
 <template>
   <div id="PageTemplate">
     <SideBar />
-    <TextField />
+    <TextField filepath="/docs/" />
   </div>
 </template>
 
@@ -16,16 +16,6 @@ export default {
     TextField,
   },
   props: ["title", "content"],
-  methods: {
-    insertData: (props) => {
-      return props;
-    },
-  },
-  mounted() {
-    this.$nextTick(() => {
-      this.insertData(this.props);
-    });
-  },
 };
 </script>
 
@@ -34,6 +24,5 @@ export default {
   display: flex;
   margin-bottom: 20px;
   grid-template-columns: 300px auto;
-  grid-template-rows: auto;
 }
 </style>

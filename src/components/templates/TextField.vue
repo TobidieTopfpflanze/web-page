@@ -1,17 +1,20 @@
 <template>
   <div id="TextField">
-    <h1 id="Title">Loading...</h1>
-    <div id="Content"></div>
+    <h1 class="Title" v-if="title">
+      <strong>{{ title }}</strong>
+    </h1>
+    <div id="Container"></div>
   </div>
 </template>
 
 <script>
 export default {
   name: "TextField",
+  props: ["title", "filepath"],
 };
 </script>
 
-<style scoped>
+<style>
 #TextField {
   width: 100vmax;
   height: fit-content;
@@ -20,22 +23,17 @@ export default {
   background-color: rgba(55, 56, 71);
 }
 
-#Title {
+.Title {
   padding: 5px 5px 5px 15px;
   margin: 15px;
   border-radius: 10px;
   background-color: rgb(44, 44, 56);
 }
 
-#Content {
+.Content {
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
   background-color: rgb(44, 44, 56);
-}
-
-#Content p {
-  padding: 0;
-  margin: 0;
 }
 </style>
