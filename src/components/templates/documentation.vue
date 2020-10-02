@@ -277,18 +277,17 @@
 <script>
 export default {
   name: "Test",
-
   methods: {
     resize: () => {
       const bar = document.getElementById("SideBar");
       const content = document.getElementById("SideBarContent");
       if (!(bar || content)) return;
+
       bar.style.height = window.innerHeight - 60 + "px";
       content.style.height = window.innerHeight - 150 + "px";
       return;
     },
   },
-
   mounted() {
     this.$nextTick(() => {
       this.resize();
@@ -353,15 +352,20 @@ export default {
 
 #MainPartTitle {
   padding: 5px 5px 5px 15px;
-  margin: 15px 15px 15px 15px;
+  margin: 15px;
   border-radius: 10px;
   background-color: rgb(44, 44, 56);
 }
 
 #MainPartContent {
-  padding: 10px 20px 10px 20px;
-  margin: 20px 20px 20px 20px;
+  padding: 20px;
+  margin: 20px;
   border-radius: 10px;
   background-color: rgb(44, 44, 56);
+}
+
+#MainPartContent p {
+  padding: 0;
+  margin: 0;
 }
 </style>
